@@ -1,10 +1,10 @@
 import React from "react";
-import TrainersCarousel from "./components/TrainersCarousel"; // Correct path
+import RatingsAndReviews from "./components/Rating";
 
 function App() {
   return (
-    <div className="App">
-      <TrainersCarousel />
+    <div>
+      <RatingsAndReviews/>
     </div>
   );
 }
