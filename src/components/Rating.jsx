@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./Rating.css"; // Your custom styles
 
 const RatingsAndReviews = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const slideDuration = 2000;
-  const stopSlideId = 'stopSlide';
-  let intervalId;
+  const sliderRef = useRef(null);
 
   const slides = [
     { src: './Images/Hiring-Partners/AKS-Developers.png', alt: 'AKS Developers' },
@@ -50,61 +48,53 @@ const RatingsAndReviews = () => {
     { src: './Images/Hiring-Partners/Virtual recipes.png', alt:'Virtual recipes'},
     { src: './Images/Hiring-Partners/Web-Hitters.png', alt:'Web-Hitters'},
   ];
+// Auto-scroll effect
+useEffect(() => {
+  const slider = sliderRef.current;
+  let scrollInterval;
 
-  useEffect(() => {
-    const autoSlide = () => {
-      intervalId = setInterval(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-        if (slides[currentIndex]?.alt === stopSlideId) {
-          clearInterval(intervalId);
-          setTimeout(() => {
-            setCurrentIndex(0);
-            autoSlide();
-          }, slideDuration);
-        }
-      }, slideDuration);
-    };
-    autoSlide();
+  if (slider) {
+    scrollInterval = setInterval(() => {
+      if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
+        slider.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        slider.scrollBy({ left: 150, behavior: 'smooth' });
+      }
+    }, 2000);
+  }
 
-    return () => clearInterval(intervalId);
-  }, [currentIndex]);
+  return () => clearInterval(scrollInterval);
+}, []);
 
-  const moveSlide = (index) => {
-    setCurrentIndex(index);
-  };
+return (
+  <div className="container mt-10 flex justify-center">
+    <div className="text-center w-3/5">
+      {/* Rating Section */}
+      <h3 className="text-2xl font-bold mb-4">Rating & Review</h3>
+      <div className="rating-container">
+        <img src="./Images/Rating/Google-Rating.jpg" alt="Google Rating" />
+        <img src="./Images/Rating/Jusdial-Rating.jpg" alt="Justdial Rating" />
+        <img src="./Images/Rating/facebook review.jpg" alt="Facebook Review" />
+      </div>
 
-  return (
-    <div className="container mt-10">
-      <div className="grid  lg:grid-cols-2 gap-4">
-        <div className="p-4">
-          <h3 className="text-center text-2xl font-bold mb-4">Rating & Review</h3>
-          <div className="flex flex-wrap justify-center gap-5">
-            <img className="w-40 h-auto rounded-lg shadow-lg" src="Images/Rating/Google-Rating new.jpg" alt="Google Rating" />
-            <img className="w-40 h-auto rounded-lg shadow-lg" src="Images/Rating/Jusdial-Rating new.jpg" alt="Justdial Rating" />
-            <img className="w-40 h-auto rounded-lg shadow-lg" src="Images/Rating/facebook review.jpg" alt="Facebook Review" />
-          </div>
-        </div>
-        <div className="p-4">
-          <h3 className="text-center text-2xl font-bold mb-4">Associated With</h3>
-          <div className="associated-container">
-            <div className="associated-slider" style={{ transform: `translateX(-${currentIndex * 150}px)` }}>
-              {slides.map((slide, index) => (
-                <div key={index} className="associated-slide">
-                  <img src={slide.src} alt={slide.alt} className="w-40 h-20 rounded-lg shadow-md" />
-                </div>
-              ))}
-            </div>
-          </div>
+      {/* Associated With */}
+      <h3 className="text-2xl font-bold mt-8 mb-4">Associated With</h3>
+      <div className="associated-container">
+        <div ref={sliderRef} className="associated-slider">
+          {slides.map((slide, index) => (
+            <img key={index} src={slide.src} alt={slide.alt} />
+          ))}
         </div>
       </div>
-      <div className="text-center my-6">
-        <h3 className="text-2xl font-bold">Recruitment Partner</h3>
-        <div className="mx-auto w-1/2">
-          <img className="w-1/2 h-auto rounded-lg shadow-md" src="./Images/Hiring-Partners/Move ONN.png" alt="Recruitment Partner" />
-        </div>
+
+      {/* Recruitment Partner */}
+      <h3 className="text-2xl font-bold mt-8 mb-4">Recruitment Partner</h3>
+      <div className="recruitment-container">
+        <img src="./Images/Hiring-Partners/Move-ONN.png" alt="Move ONN" />
       </div>
     </div>
-  );
+  </div>
+);
 };
 
 export default RatingsAndReviews;
