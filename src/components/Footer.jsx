@@ -39,8 +39,7 @@ const Footer = () => {
             ></iframe>
           </div>
         </div>
-        <div className="row text-center">
-          <div className="col">
+        <div className="row def">
             <div className="social-icons">
               <a href="https://www.instagram.com/learnseo_webdesign/" target="_blank" rel="noopener noreferrer">
                 <img src="/Images/Social Media/instagram.png" alt="Instagram" className="icon" />
@@ -59,7 +58,6 @@ const Footer = () => {
               Copyright © 2025 Learn SEO & Web Designing Chandigarh | Design By <a href="https://www.web-hitters.com/">Web Hitters</a>
             </p>
           </div>
-        </div>
       </div>
     </footer>
   );

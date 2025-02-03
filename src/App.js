@@ -1,12 +1,10 @@
 import React from "react";
-import Certification from "./components/Certification";
-import RatingsAndReviews from "./components/Rating";
-
-
+import Header from "./components/header"
+import LandingPage from "./components/Landingpage";
 function App() {
   return (
     <div>
-      <RatingsAndReviews/>
+      <LandingPage/>
     </div>
   );
 }

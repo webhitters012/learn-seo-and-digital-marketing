@@ -47,7 +47,7 @@ const WhatWeProvide = () => {
         <div className="col-lg-7 p-0 weg">
           <h3 className="p-2 p-md-0" style={{ fontSize: "30px" }}>
             <b>
-              What <span style={{ color: "#de3335" }}> Web Hitters </span> Is Offering?
+              What <span class="abc"> Web Hitters </span> Is Offering?
             </b>
           </h3>
           <div className="row adc">

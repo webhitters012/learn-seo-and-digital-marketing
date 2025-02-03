@@ -16,4 +16,9 @@
 
 .adc{ 
     padding-left: 20px;
+    color:black;
+}
+.abc{
+    color: #de3335;
+    font-size: 30px;
 }
