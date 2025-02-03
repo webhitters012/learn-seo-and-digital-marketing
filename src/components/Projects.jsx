@@ -1,6 +1,6 @@
 import React from "react";
 import "./Projects.css"; // Import custom styles
-import mapImage from "../assets/Images/map.png"; // Adjust path based on your project structure
+import mapImage from "../assests/map.png"; // Adjust path based on your project structure
 
 const InternationalProjects = () => {
   return (
