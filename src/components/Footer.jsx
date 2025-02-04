@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="col">
             <h4 className="heading">Our Courses</h4>
             <p>SEO Courses (90 days)</p>
-            <p><a href="#">Social Media Courses</a></p>
+            <p>Social Media Courses</p>
             <p>Digital Marketing Courses</p>
             <p>Graphic & Web Design Courses</p>
           </div>

@@ -6,6 +6,9 @@
     font-size: 16px;
     margin-bottom: 15px;
 }
+.heading{
+    color: #de3335
+}
 .footer p, .footer a {
     color: black;
     font-size: 14px;
@@ -16,6 +19,7 @@
 }
 .social-icons{
     margin-bottom: 10px;
+    justify-content: center !important;
 }
 .social-icons a {
     margin: 0 10px;
@@ -32,6 +36,7 @@
 .icon{
     height: 30px;
     width: 30px;
+
 }
 .logo{
     width: 150px;
