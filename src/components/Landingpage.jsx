@@ -12,8 +12,10 @@ import Certification from "./Certification";
 import SuccessStories from "./Success-Stories";
 import PopupModal from "./Banner";
 import WhatWeProvide from "./Provide"
+import Accredited from "./Accredited.jsx"
 import InternationalProjects from "./Projects.jsx" 
 import ContactForm from "./ContactForm"
+import FAQSection from "./FAQ.jsx"
 import AboutZirakpur from "./Zirakpur"
 import Footer from "./Footer"
 
@@ -50,10 +52,14 @@ const LandingPage = () => {
             <br/>
             {/*WhatWeProvide*/}
             <WhatWeProvide/>
+            {/*Accredited*/}
+            <Accredited/>
             {/*InternationalProjects*/}
             <InternationalProjects/>
             {/*ContactForm*/}
             <ContactForm/>
+            {/*FAQSection*/}
+            <FAQSection/>
             {/*AboutZirakpur*/}
             <AboutZirakpur/>
             {/*Footer*/}
