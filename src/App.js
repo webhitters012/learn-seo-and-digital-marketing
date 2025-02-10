@@ -1,11 +1,11 @@
 import React from "react";
 import SEO from "./components/SEO-Page/SEO";
 import LandingPage from "./components/Landingpage";
-import CareerAfterSEO from "./components/SEO-Page/Careers"
+import DigitalMarketing from "./components/Digital-Marketing/DM"
 function App() {
   return (
     <div>
-      <SEO/>
+      <DigitalMarketing/>
     </div>
   );
 }
