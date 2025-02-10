@@ -15,8 +15,6 @@ const HeroSection = () => {
                 <h2 className="abc">
                   Become a <span style={{ color: "#de3335" }}>Digital Marketer</span> in 12 weeks
                 </h2>
-                <br />
-                <br />
                 <b style={{ fontSize: "24px" }}>
                   100% Job <i style={{ color: "#de3335" }}>Guarantee</i> in Digital Marketing
                 </b>

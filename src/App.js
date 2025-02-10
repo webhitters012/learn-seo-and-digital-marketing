@@ -1,11 +1,19 @@
 import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SEO from "./components/SEO-Page/SEO";
 import LandingPage from "./components/Landingpage";
 import DigitalMarketing from "./components/Digital-Marketing/DM"
 function App() {
   return (
     <div>
-      <DigitalMarketing/>
+      <BrowserRouter>
+      <Routes>
+          <Route path="/" element={<LandingPage/>} />
+          <Route path="/SEO" element={<SEO/>} />
+          <Route path="DM" element={<DigitalMarketing/>} />
+      </Routes>
+    </BrowserRouter>
     </div>
   );
 }
