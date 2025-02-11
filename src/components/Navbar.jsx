@@ -21,8 +21,9 @@ const Navbar = () => {
           {dropdownOpen && (
             <ul className="dropdown-menu">
               <li onClick={() => navigate("/SEO")}>SEO</li>
-              <li>Web Design</li>
               <li onClick={() => navigate("/DM")}>Digital Marketing</li>
+              <li>Web Design</li>
+              <li>Graphic Designing</li>
             </ul>
           )}
         </li>
