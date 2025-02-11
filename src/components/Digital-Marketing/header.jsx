@@ -10,7 +10,7 @@ const Header = () => {
         <div class="row align-items-center">
             
             <div class="col-md-4 d-flex align-items-center">
-                <img src="Images/we hitters.png" alt="Logo" class="logo"/>
+                <img src="/Images/Tools/logo.png" alt="Logo" class="logo"/>
             </div>
 
             <div class="col-md-4 d-flex justify-content-center align-items-center">
