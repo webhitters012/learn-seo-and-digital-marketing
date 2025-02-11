@@ -9,7 +9,7 @@ import Enrolling from "./Enrolling"
 import JobRoles from "./job"
 import Benefits from "./Benefits"
 import Modules from "./Modules"
-import FAQSection from "./FAQ"
+import FAQSection from "./Frequently"
 
 function DigitalMarketing(){
     return(

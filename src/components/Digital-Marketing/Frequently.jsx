@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
-import "./FAQ.css"; // Import CSS file
+import "./Frequently.css"; // Import CSS file
 
 const faqs = [
   {
