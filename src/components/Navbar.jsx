@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className="navbar">
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About Us</Link></li>
+        <li>About Us</li>
         
         <li 
           className="dropdown" 
@@ -21,15 +21,15 @@ const Navbar = () => {
           {dropdownOpen && (
             <ul className="dropdown-menu">
               <li onClick={() => navigate("/SEO")}>SEO</li>
-              <li><Link to="/courses/web-design">Web Design</Link></li>
+              <li>Web Design</li>
               <li onClick={() => navigate("/DM")}>Digital Marketing</li>
             </ul>
           )}
         </li>
         
-        <li><Link to="/blog">Our Blog</Link></li>
-        <li><Link to="/contact">Contact Us</Link></li>
-        <li className="apply-jobs"><Link to="/apply-jobs">Apply Jobs</Link></li>
+        <li>Our Blog</li>
+        <li>Contact Us</li>
+        <li>Apply Jobs</li>
       </ul>
     </nav>
   );
