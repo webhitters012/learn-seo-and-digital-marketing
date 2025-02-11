@@ -10,11 +10,13 @@ import JobRoles from "./job"
 import Benefits from "./Benefits"
 import Modules from "./Modules"
 import FAQSection from "./Frequently"
+import Navbar from "../Navbar"
 
 function DigitalMarketing(){
     return(
         <div>
             <Header/>
+            <Navbar/>
             <DigitalMarketingBanner/>
             <JobPlacements/>
             <HeroSection/>

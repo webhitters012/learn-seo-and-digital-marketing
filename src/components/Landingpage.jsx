@@ -1,4 +1,5 @@
 import Header from "./header"
+import Navbar from "./Navbar.jsx"
 import HeroSection from "./hero-section.jsx"
 import FutureDigitalMarketing from "./Future.jsx"
 import HiringPartners from "./Hiring-Partners.jsx"
@@ -24,6 +25,8 @@ const LandingPage = () => {
     <div>
       {/*Header*/}
       <Header/>
+      {/*Navbar*/}
+      <Navbar/>
       {/*HeroSection*/}
       <HeroSection/>
       {/*Future of DM*/}

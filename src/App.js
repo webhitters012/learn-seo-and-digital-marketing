@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./components/Landingpage";
 import SEO from "./components/SEO-Page/SEO"

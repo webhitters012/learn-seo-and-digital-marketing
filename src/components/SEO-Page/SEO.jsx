@@ -15,11 +15,14 @@ import CertificationSection from "./Certificate";
 import SuccessStories from "./Success";
 import Course from "./Courses";
 import Footer from "./Footer";
+import Navbar from "../Navbar"
 function SEO(){
     return(
     <div>
         {/*Header*/}
         <Header/>
+        {/*Navbar*/}
+        <Navbar/>
         {/*Banner*/}
         <Banner/>;
         {/*Training*/}
