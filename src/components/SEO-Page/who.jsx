@@ -10,7 +10,7 @@ const OurAdvancedSEOCourses = () => {
     <div className="our-main-outerline-box-of-heading">
       <div className="outerline-box-of-heading">
         <h1>
-          <span>Who Can Join Our Advanced SEO Courses in Zirakpur</span>
+          <span class="abc">Who Can Join Our Advanced SEO Courses in Zirakpur</span>
         </h1>
         <p>
           Our Advanced SEO Courses in Zirakpur are ideal for a diverse range of individuals. Freshers eager to

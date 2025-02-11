@@ -1,20 +1,20 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./header";
-import Footer from "./Footer";
-import Banner from "./Banner"
+import Banner from "./Banner";
 import MyComponent from "./Training";
-import OurAdvancedSEOCourses from "./who" 
-import WhyChooseUs from "./USP"
-import SEOCourseOverview from "./Video"
-import SEOBenefits from "./Benefits"
-import CareerAfterSEO from "./Careers"
+import OurAdvancedSEOCourses from "./who";
+import WhyChooseUs from "./USP";
+import SEOCourseOverview from "./Video";
+import SEOBenefits from "./Benefits";
+import CareerAfterSEO from "./Careers";
 import Tools from "./tools";
-import JobAfterSEOTraining from "./jobs"
-import FAQSection from "./FAQ"
-import CertificationSection from "./Certificate"
-import SuccessStories from "./Success"
-import Course from "./Courses"
+import JobAfterSEOTraining from "./jobs";
+import FAQSection from "./FAQ";
+import CertificationSection from "./Certificate";
+import SuccessStories from "./Success";
+import Course from "./Courses";
+import Footer from "./Footer";
 function SEO(){
     return(
     <div>

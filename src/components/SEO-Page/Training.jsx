@@ -29,7 +29,7 @@ const MyComponent = () => {
           </p>
         </div>
         <div className="img-container">
-          <img src={myImage} alt="Best SEO Coaching in Dera Bassi" className="abc"/>
+          <img src={myImage} alt="Best SEO Coaching in Dera Bassi" className="au"/>
           <button id="another-button" className="apply-now-btn btn-div">Apply Now</button>
         </div>
       </div>

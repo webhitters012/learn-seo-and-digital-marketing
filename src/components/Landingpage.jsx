@@ -2,7 +2,7 @@ import Header from "./header"
 import HeroSection from "./hero-section.jsx"
 import FutureDigitalMarketing from "./Future.jsx"
 import HiringPartners from "./Hiring-Partners.jsx"
-import Accordion from "./Accordion";
+import USP from "./Accordion";
 import Tools from "./tools";
 import TestimonialSlider from "./Testimonials"
 import Video from "./Video";
@@ -31,7 +31,7 @@ const LandingPage = () => {
         {/* Hiring Partners Section */}
         <HiringPartners/>
         {/* Accordion Section */}
-        <Accordion />
+        <USP/>
         {/*Tools Section*/}
             <Tools/>
             {/*Testimonial Section*/}

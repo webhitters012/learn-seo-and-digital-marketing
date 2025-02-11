@@ -1,21 +1,21 @@
 import { useState } from "react";
 import "./Accordion.css";
 
-const AccordionItem = ({ title, content }) => {
+const USPItem = ({ title, content }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="accordion-item">
-            <div className="accordion-header" onClick={() => setIsOpen(!isOpen)}>
+        <div className="usp-item">
+            <div className="usp-header" onClick={() => setIsOpen(!isOpen)}>
                 <span>{title}</span>
                 <span>{isOpen ? "▲" : "▼"}</span>
             </div>
-            {isOpen && <div className="accordion-content">{content}</div>}
+            {isOpen && <div className="usp-content">{content}</div>}
         </div>
     );
 };
 
-const Accordion = () => {
+const USP = () => {
     const items = [
         { title: "✅ 100% Live Trainings", content: "Learn through interactive, real-time sessions designed for hands-on experience." },
         { title: "✅ 100% Job Guaranteed in Digital Marketing", content: "We ensure a guaranteed job in SEO and Digital Marketing upon successful completion." },
@@ -26,15 +26,15 @@ const Accordion = () => {
     ];
 
     return (
-        <div className="accordion-container">
-            <h2 className="accordion-title">Why <span class="adc">Choose Us?</span></h2>
-            <div className="accordion">
+        <div className="usp-container">
+            <h2 className="usp-title">Why <span class="efg">Choose Us?</span></h2>
+            <div className="usp">
                 {items.map((item, index) => (
-                    <AccordionItem key={index} title={item.title} content={item.content} />
+                    <USPItem key={index} title={item.title} content={item.content} />
                 ))}
             </div>
         </div>
     );
 };
 
-export default Accordion;
+export default USP;
