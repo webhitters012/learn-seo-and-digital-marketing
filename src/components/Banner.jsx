@@ -51,7 +51,7 @@ const PopupModal = () => {
               </form>
             </div>
             <div className="col-md-6">
-              <img src="Images/popup img.jpg" height="650px" width="450px" alt="Popup Image" />
+              <img src="Images/popup img.jpg" height="650px" width="450px" alt="Popup_Image" />
             </div>
           </div>
         </div>
