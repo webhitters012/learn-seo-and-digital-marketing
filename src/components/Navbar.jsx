@@ -3,22 +3,53 @@ import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
-  const navigate = useNavigate(); // ✅ React Router Navigation
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const navigate = useNavigate();
+  
+  // Separate state for each dropdown
+  const [openDropdown, setOpenDropdown] = useState(null);
+
+  // Function to handle dropdown hover
+  const handleMouseEnter = (menu) => {
+    setOpenDropdown(menu);
+  };
+
+  // Function to close dropdown when mouse leaves
+  const handleMouseLeave = () => {
+    setOpenDropdown(null);
+  };
 
   return (
     <nav className="navbar">
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
-        <li>About Us</li>
-        
+
+        {/* Company Dropdown */}
         <li 
           className="dropdown" 
-          onMouseEnter={() => setDropdownOpen(true)} 
-          onMouseLeave={() => setDropdownOpen(false)}
+          onMouseEnter={() => handleMouseEnter("company")} 
+          onMouseLeave={handleMouseLeave}
+        >
+          Company
+          {openDropdown === "company" && (
+            <ul className="dropdown-menu">
+              <li onClick={() => navigate("/Founder")}>Our Founder</li>
+              <li>Our Expertise</li>
+              <li>About Us</li>
+              <li>Our Trainees</li>
+            </ul>
+          )}
+        </li>
+
+        <li>Our Blog</li>
+
+        {/* Courses Dropdown */}
+        <li 
+          className="dropdown" 
+          onMouseEnter={() => handleMouseEnter("courses")} 
+          onMouseLeave={handleMouseLeave}
         >
           Our Courses
-          {dropdownOpen && (
+          {openDropdown === "courses" && (
             <ul className="dropdown-menu">
               <li onClick={() => navigate("/SEO")}>SEO</li>
               <li onClick={() => navigate("/DM")}>Digital Marketing</li>
@@ -27,8 +58,7 @@ const Navbar = () => {
             </ul>
           )}
         </li>
-        
-        <li>Our Blog</li>
+
         <li>Contact Us</li>
         <li>Apply Jobs</li>
       </ul>
