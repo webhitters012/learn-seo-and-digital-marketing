@@ -5,23 +5,25 @@
     text-align: center;
     padding: 10px;
     max-width: 1260px;
-  }
-  
-  /* Mobile responsiveness */
-  @media (max-width: 768px) { /* Targets devices with widths of 768px or smaller */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    /* Targets devices with widths of 768px or smaller */
     .vdc {
-      background-size: cover; /* Ensure the image adjusts for smaller screens */
-      padding: 15px; /* Reduce padding for better fit */
-      font-size: 14px; /* Optional: Adjust font size for readability */
+        background-size: cover; /* Ensure the image adjusts for smaller screens */
+        padding: 15px; /* Reduce padding for better fit */
+        font-size: 14px; /* Optional: Adjust font size for readability */
     }
-  }
-  
-  @media (max-width: 480px) { /* Targets devices with widths of 480px or smaller */
+}
+
+@media (max-width: 480px) {
+    /* Targets devices with widths of 480px or smaller */
     .vdc {
-      padding: 10px; /* Further reduce padding for very small screens */
-      font-size: 12px; /* Optional: Further adjust font size */
+        padding: 10px; /* Further reduce padding for very small screens */
+        font-size: 12px; /* Optional: Further adjust font size */
     }
-  }
+}
 
 .number-section-of-hero {
     background: #de3335;
@@ -34,29 +36,29 @@
     width: 1200px;
 }
 
-.hero-section{
+.hero-section {
     padding: 25px;
 }
 
 .abc {
     font-size: 50px !important;
-    padding-bottom: -500x !important;
+    /* Removed invalid padding value: padding-bottom: -500x; */
 }
 
 .button-container {
-    text-align: center;  
-    padding: 30px 15px; 
-    display: flex;              /* Flexbox for layout */
-    flex-direction: column;     /* Stack buttons vertically by default */
-    align-items: center;        /* Center buttons horizontally */
-    gap: 20px;                  /* Space between buttons */
+    text-align: center;
+    padding: 30px 15px;
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack buttons vertically by default */
+    align-items: center; /* Center buttons horizontally */
+    gap: 20px; /* Space between buttons */
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
     .button-container {
-        flex-direction: row;    /* Arrange buttons side-by-side on larger screens */
-        justify-content: center; 
-        gap: 10px;              /* Adjust spacing between buttons */
+        flex-direction: row; /* Arrange buttons side-by-side on larger screens */
+        justify-content: center;
+        gap: 10px; /* Adjust spacing between buttons */
     }
 }
 
@@ -72,8 +74,8 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 
-                7px 7px 20px 0px rgba(0, 0, 0, 0.1), 
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+                7px 7px 20px 0px rgba(0, 0, 0, 0.1),
                 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s ease;
     font-family: 'Courier New', monospace;
@@ -82,7 +84,7 @@
 .btn-apply {
     background-color: #de3335;
     color: #fff;
-    margin-right: 0;           
+    margin-right: 0;
 }
 
 .btn-apply:hover {
@@ -102,49 +104,49 @@
 }
 
 textarea {
-    width: 100%; 
-    max-width: 100%; 
+    width: 100%;
+    max-width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
-    resize: vertical; 
+    resize: vertical;
 }
 
 @media (max-width: 768px) {
     textarea {
-        font-size: 13px; 
+        font-size: 13px;
         padding: 8px;
     }
 }
 
 @media (max-width: 480px) {
     textarea {
-        font-size: 12px; 
+        font-size: 12px;
     }
 }
 
 .form-container {
     background: white;
-    padding: 20px; 
+    padding: 20px;
     border-radius: 10px;
     color: black;
     width: 450px;
-    max-width: 90%; 
-    height: auto; 
+    max-width: 90%;
+    height: auto;
     font-size: 14px;
-    margin-top: 15px; 
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    margin-top: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.form-container input, 
-.form-container select, 
+.form-container input,
+.form-container select,
 .form-container textarea {
     width: 100%;
     margin-bottom: 10px;
     padding: 10px;
     font-size: 14px;
-    border: 1px solid #ccc; 
+    border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
 }
@@ -154,7 +156,7 @@ textarea {
     color: white;
     border: none;
     padding: 12px;
-    font-size: 16px; 
+    font-size: 16px;
     width: 100%;
     border-radius: 5px;
     margin-top: 10px;
@@ -163,10 +165,11 @@ textarea {
 }
 
 .form-container button:hover {
-    background-color: #b62a2a; 
+    background-color: #b62a2a;
 }
 
-@media (max-width: 768px) { /* Tablets and small devices */
+@media (max-width: 768px) {
+    /* Tablets and small devices */
     .form-container {
         width: 100%; /* Takes up full width of the screen */
         padding: 15px; /* Adjust padding for smaller screens */
@@ -182,13 +185,14 @@ textarea {
     }
 }
 
-@media (max-width: 480px) { /* Very small devices like phones */
+@media (max-width: 480px) {
+    /* Very small devices like phones */
     .form-container {
         padding: 10px; /* Further reduce padding */
     }
 
-    .form-container input, 
-    .form-container select, 
+    .form-container input,
+    .form-container select,
     .form-container textarea {
         padding: 8px; /* Adjust input padding */
         font-size: 12px; /* Smaller font for inputs */
